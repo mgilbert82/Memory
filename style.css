@@ -1,7 +1,9 @@
 #GameBoard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-shrink: 4;
+
 }
 
 .card {
@@ -56,4 +58,8 @@
 
 #img4 {
     background-image: url(./images/stitch.png);
+}
+
+.card.finded {
+    transform: scale(0.8);
 }
