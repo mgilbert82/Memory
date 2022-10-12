@@ -1,0 +1,59 @@
+#GameBoard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px
+}
+
+.card {
+    margin: 5px;
+    width: 250px;
+    height: 170px;
+
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card.hidden .imgContainer {
+    visibility: hidden;
+}
+
+.card.show .imgContainer {
+    visibility: visible;
+}
+
+.card.hidden {
+    background-image: url(./images/walt-disney.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 99%;
+    width: 250px;
+    height: 170px;
+    border: 2px dashed #333;
+}
+
+.imgContainer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 99%;
+    width: 250px;
+    height: 170px;
+    border: 2px dashed #333;
+}
+
+#img1 {
+    background-image: url(./images/lion-king.png);
+}
+
+#img2 {
+    background-image: url(./images/aladin.png);
+}
+
+#img3 {
+    background-image: url(./images/frozen.png);
+}
+
+#img4 {
+    background-image: url(./images/stitch.png);
+}
